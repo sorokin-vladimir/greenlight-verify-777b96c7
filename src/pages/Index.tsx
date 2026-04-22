@@ -41,10 +41,10 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <BentoFeatures />
+        <Pricing />
         <HowItWorks />
         <Coverage />
-        <Pricing />
+        <BentoFeatures />
         <FAQ />
         <CTA />
       </main>
