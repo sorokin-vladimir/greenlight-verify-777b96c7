@@ -1,16 +1,56 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import BentoFeatures from "@/components/landing/BentoFeatures";
+import HowItWorks from "@/components/landing/HowItWorks";
+import Coverage from "@/components/landing/Coverage";
+import Pricing from "@/components/landing/Pricing";
+import FAQ from "@/components/landing/FAQ";
+import CTA from "@/components/landing/CTA";
+import Footer from "@/components/landing/Footer";
+import { useEffect } from "react";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useEffect(() => {
+    document.title = "Verifio — KYC-верификация за 8 секунд";
+
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("name", name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setMeta(
+      "description",
+      "KYC-платформа Verifio: верификация личности за 8 секунд, 14 000+ документов, 190+ стран, AML-скрининг и compliance.",
+    );
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", window.location.origin + "/");
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <BentoFeatures />
+        <HowItWorks />
+        <Coverage />
+        <Pricing />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
