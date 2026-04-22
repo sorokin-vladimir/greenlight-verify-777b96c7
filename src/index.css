@@ -4,59 +4,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* KYC Landing — Emerald Prestige design system. All colors HSL. */
+/* KYC Landing — Sapphire Prestige design system. All colors HSL. */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 160 40% 8%;
+    --foreground: 220 45% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 160 40% 8%;
+    --card-foreground: 220 45% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 160 40% 8%;
+    --popover-foreground: 220 45% 8%;
 
-    /* Deep emerald — primary brand */
-    --primary: 158 84% 16%;
-    --primary-foreground: 140 30% 96%;
+    /* Deep sapphire — primary brand */
+    --primary: 222 80% 18%;
+    --primary-foreground: 215 30% 96%;
 
-    /* Bright accent emerald */
-    --accent: 160 84% 39%;
-    --accent-foreground: 158 84% 12%;
-    --accent-soft: 152 60% 94%;
+    /* Bright accent blue */
+    --accent: 217 91% 55%;
+    --accent-foreground: 222 80% 12%;
+    --accent-soft: 214 95% 95%;
 
-    --secondary: 140 20% 96%;
-    --secondary-foreground: 158 84% 16%;
+    --secondary: 215 25% 96%;
+    --secondary-foreground: 222 80% 18%;
 
-    --muted: 140 16% 95%;
-    --muted-foreground: 160 15% 40%;
+    --muted: 215 20% 95%;
+    --muted-foreground: 220 15% 40%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 150 18% 90%;
-    --input: 150 18% 90%;
-    --ring: 160 84% 39%;
+    --border: 215 22% 90%;
+    --input: 215 22% 90%;
+    --ring: 217 91% 55%;
 
     --radius: 1rem;
 
     /* Surfaces */
-    --surface: 140 20% 97%;
+    --surface: 215 25% 97%;
     --surface-elevated: 0 0% 100%;
-    --surface-dark: 158 60% 10%;
-    --surface-dark-foreground: 140 30% 96%;
+    --surface-dark: 222 60% 11%;
+    --surface-dark-foreground: 215 30% 96%;
 
     /* Gradients */
-    --gradient-emerald: linear-gradient(135deg, hsl(158 84% 16%) 0%, hsl(160 70% 22%) 100%);
-    --gradient-mint: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(165 75% 50%) 100%);
-    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(160 84% 39% / 0.18), transparent 60%);
-    --gradient-bento: linear-gradient(180deg, hsl(140 20% 97%) 0%, hsl(0 0% 100%) 100%);
+    --gradient-emerald: linear-gradient(135deg, hsl(222 80% 18%) 0%, hsl(220 70% 26%) 100%);
+    --gradient-mint: linear-gradient(135deg, hsl(217 91% 55%) 0%, hsl(200 90% 60%) 100%);
+    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(217 91% 55% / 0.18), transparent 60%);
+    --gradient-bento: linear-gradient(180deg, hsl(215 25% 97%) 0%, hsl(0 0% 100%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 1px 2px hsl(158 40% 10% / 0.04), 0 8px 24px -12px hsl(158 40% 10% / 0.08);
-    --shadow-elevated: 0 4px 12px -2px hsl(158 40% 10% / 0.06), 0 24px 48px -16px hsl(158 60% 12% / 0.14);
-    --shadow-glow: 0 0 0 1px hsl(160 84% 39% / 0.2), 0 12px 40px -8px hsl(160 84% 39% / 0.3);
+    --shadow-soft: 0 1px 2px hsl(222 45% 10% / 0.04), 0 8px 24px -12px hsl(222 45% 10% / 0.08);
+    --shadow-elevated: 0 4px 12px -2px hsl(222 45% 10% / 0.06), 0 24px 48px -16px hsl(222 60% 14% / 0.14);
+    --shadow-glow: 0 0 0 1px hsl(217 91% 55% / 0.22), 0 12px 40px -8px hsl(217 91% 55% / 0.32);
     --shadow-inset: inset 0 1px 0 0 hsl(0 0% 100% / 0.6);
 
     /* Transitions */
